@@ -30,7 +30,11 @@ ln ~/.nix-profile/bin/git git.exe
 #Install TMUX plugin manager (tpm)
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+#clone .dotfiles
+git clone git@github.com:Jacksilky/.dotfiles.git ~/
+
 #Setup stow symlinks
+cd ~/.dotfiles
 for dir in */; do
     # Remove trailing slash from directory name
     dirname="${dir%/}"
