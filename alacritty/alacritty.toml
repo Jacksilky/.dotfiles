@@ -306,4 +306,5 @@ bindings = [
     # { key = "Key", mods = "Modifiers", action = "Action" },
     # { key = "Key", mods = "Modifiers", chars = "Characters to send" },
     # ...
+    { key = "Space", mods = "Control", chars = "\u0000" }
 ]
